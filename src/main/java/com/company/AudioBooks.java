@@ -1,6 +1,6 @@
+package com.company;
 
-
-public class AudioBooks extends DigitalItems{
+public class AudioBooks extends DigitalItems {
     //Attributes
     private String title;
     private String author;
@@ -31,7 +31,7 @@ public class AudioBooks extends DigitalItems{
 
     @Override
     public String toString() {
-        return "AudioBooks{" +
+        return "com.company.AudioBooks{" +
                 "title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 '}';

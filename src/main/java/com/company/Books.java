@@ -1,6 +1,8 @@
+package com.company;
 
+import com.company.AnalogueItems;
 
-public class Books extends AnalogueItems{
+public class Books extends AnalogueItems {
     //Attributes
     private String title;
     private String author;

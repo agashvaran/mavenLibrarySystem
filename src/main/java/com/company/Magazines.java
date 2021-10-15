@@ -1,4 +1,6 @@
+package com.company;
 
+import com.company.AnalogueItems;
 
 public class Magazines extends AnalogueItems {
     //Attributes
@@ -20,7 +22,7 @@ public class Magazines extends AnalogueItems {
 
     @Override
     public String toString() {
-        return "Magazines{" +
+        return "com.company.Magazines{" +
                 "title='" + title + '\'' +
                 '}';
     }

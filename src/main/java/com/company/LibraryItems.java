@@ -1,4 +1,4 @@
-
+package com.company;
 
 import java.util.ArrayList;
 
@@ -14,7 +14,7 @@ public abstract class LibraryItems{
         this.libraryItemName = libraryItemName;
     }
 
-//    public LibraryItems(String libraryItemName, ArrayList<LibraryItems> allItems){
+//    public com.company.LibraryItems(String libraryItemName, ArrayList<com.company.LibraryItems> allItems){
 //        super(allItems);
 //        this.libraryItemName = libraryItemName;
 //    }

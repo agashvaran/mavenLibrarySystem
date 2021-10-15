@@ -1,4 +1,4 @@
-
+package com.company;
 
 import java.util.ArrayList;
 
@@ -20,7 +20,7 @@ public class Library {
 
     @Override
     public String toString() {
-        return "Library{" +
+        return "com.company.Library{" +
                 "libraryStock=" + libraryStock +
                 ", postCode='" + postCode + '\'' +
                 '}';

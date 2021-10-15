@@ -1,4 +1,4 @@
-
+package com.company;
 
 public class EmptyDesk extends LibraryItems {
     //Attributes
@@ -11,7 +11,7 @@ public class EmptyDesk extends LibraryItems {
     }
 
     public EmptyDesk(String deskNumber){
-        super("EmptyDesk");
+        super("com.company.EmptyDesk");
         this.deskNumber = deskNumber;
     }
 
@@ -20,7 +20,7 @@ public class EmptyDesk extends LibraryItems {
 
     @Override
     public String toString() {
-        return "EmptyDesk{" +
+        return "com.company.EmptyDesk{" +
                 "deskNumber='" + deskNumber + '\'' +
                 '}';
     }

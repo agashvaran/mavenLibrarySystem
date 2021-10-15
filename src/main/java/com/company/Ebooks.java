@@ -1,4 +1,6 @@
+package com.company;
 
+import com.company.DigitalItems;
 
 public class Ebooks extends DigitalItems implements Read {
     //Attributes
@@ -30,7 +32,7 @@ public class Ebooks extends DigitalItems implements Read {
 
     @Override
     public String toString() {
-        return "Ebooks{" +
+        return "com.company.Ebooks{" +
                 "title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 '}';
