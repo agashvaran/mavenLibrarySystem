@@ -30,6 +30,12 @@ public class ComputerDeskTest {
         assertEquals("The desk was not the same","logging out of library computer",desk1.logOut());
     }
 
+    @Test
+    public void testgetLibraryItemNameMethod(){
+        ComputerDesk desk1 = new ComputerDesk("23");
+        assertEquals("The desk was not the same","Computer 23",desk1.getLibraryItemName());
+    }
+
 
 
 

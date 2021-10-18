@@ -24,6 +24,14 @@ public class DVDsTest {
         assertEquals("The dvd was not the same","DVD is loaned to you for a week.",dvd1.borrow());
     }
 
+    @Test
+    public void testgetLibraryItemNameMethod(){
+        DVDs dvd1 = new DVDs("No Time To Die");
+        assertEquals("The dvd was not the same","No Time To Die",dvd1.getLibraryItemName());
+    }
+
+
+
 
 
 }
