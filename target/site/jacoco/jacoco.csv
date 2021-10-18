@@ -1,0 +1,13 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+mavenLibrarySystem,com.company,LibraryItems,0,6,0,0,0,3,0,1,0,1
+mavenLibrarySystem,com.company,Ebooks,47,0,0,0,18,0,9,0,9,0
+mavenLibrarySystem,com.company,EmptyDesk,28,0,0,0,11,0,7,0,7,0
+mavenLibrarySystem,com.company,DVDs,27,0,0,0,11,0,7,0,7,0
+mavenLibrarySystem,com.company,Magazines,38,0,0,0,16,0,11,0,11,0
+mavenLibrarySystem,com.company,DigitalItems,6,0,0,0,3,0,2,0,2,0
+mavenLibrarySystem,com.company,AudioBooks,59,0,0,0,23,0,12,0,12,0
+mavenLibrarySystem,com.company,Library,24,0,0,0,7,0,4,0,4,0
+mavenLibrarySystem,com.company,Main,110,0,2,0,24,0,3,0,2,0
+mavenLibrarySystem,com.company,Books,88,13,0,0,34,5,17,2,17,2
+mavenLibrarySystem,com.company,ComputerDesk,30,0,0,0,12,0,8,0,8,0
+mavenLibrarySystem,com.company,AnalogueItems,0,4,0,0,0,2,0,1,0,1
