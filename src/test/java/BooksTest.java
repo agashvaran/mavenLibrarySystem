@@ -53,7 +53,7 @@ public class BooksTest {
     @Test
     public void testGetLibraryItemNameMethod(){
         com.company.Books testBook = new com.company.Books("catch 22");
-        assertEquals("The book was not the same","catch 22",testBook.getLibraryItemName());
+        assertEquals("The book was not the same","Book: catch 22",testBook.getLibraryItemName());
     }
 
     @Test

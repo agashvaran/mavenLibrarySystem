@@ -36,6 +36,20 @@ public class MagazinesTest {
         assertEquals("The desk was not the same","reading magazine...",mag1.read());
     }
 
+    @Test
+    public void testgetLibraryItemNameMethod(){
+        Magazines mag1 = new Magazines("Wired");
+        assertEquals("The desk was not the same","Wired",mag1.getLibraryItemName());
+    }
+
+    @Test
+    public void testgetTitleMethod(){
+        Magazines mag1 = new Magazines("Wired");
+        assertEquals("The desk was not the same","Wired",mag1.getTitle());
+    }
+
+
+
 
 
 

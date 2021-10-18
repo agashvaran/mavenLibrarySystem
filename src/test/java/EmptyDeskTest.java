@@ -19,9 +19,15 @@ public class EmptyDeskTest {
     }
 
     @Test
-    public void testusePersonalDeviceMethod(){
+    public void testUsePersonalDeviceMethod(){
         EmptyDesk desk2 = new EmptyDesk("49");
         assertEquals("The desk was not the same","using my personal laptop...",desk2.usePersonalDevice());
+    }
+
+    @Test
+    public void testgetLibraryItemNameMethod(){
+        EmptyDesk desk2 = new EmptyDesk("49");
+        assertEquals("The desk was not the same","Desk 49",desk2.getLibraryItemName());
     }
 
 
