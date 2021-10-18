@@ -20,7 +20,7 @@ public class EmptyDesk extends LibraryItems {
 
     @Override
     public String toString() {
-        return "com.company.EmptyDesk{" +
+        return "EmptyDesk{" +
                 "deskNumber='" + deskNumber + '\'' +
                 '}';
     }

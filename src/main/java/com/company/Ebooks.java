@@ -1,8 +1,6 @@
 package com.company;
 
-import com.company.DigitalItems;
-
-public class Ebooks extends DigitalItems implements Read {
+public class Ebooks extends DigitalItems implements Read{
     //Attributes
     private String title;
     private String author;
@@ -32,7 +30,7 @@ public class Ebooks extends DigitalItems implements Read {
 
     @Override
     public String toString() {
-        return "com.company.Ebooks{" +
+        return "Ebooks{" +
                 "title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 '}';
@@ -46,23 +44,31 @@ public class Ebooks extends DigitalItems implements Read {
         return "this ebook has been reserved";
     }
 
-    //this is bad coding. make it an interface.
-//    @Override
-//    public void play(){
-//        read();
-//    }
-
     public String read(){
         return "preparing book for reading...";
     }
 
     public String borrow(){
-        return "ebook sent to email";
+        return "ebook sent to email...";
     }
-
-
 
     public String getLibraryItemName() {
         return title;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
     }
 }

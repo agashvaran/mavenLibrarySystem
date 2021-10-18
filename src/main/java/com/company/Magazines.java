@@ -22,7 +22,7 @@ public class Magazines extends AnalogueItems {
 
     @Override
     public String toString() {
-        return "com.company.Magazines{" +
+        return "Magazines{" +
                 "title='" + title + '\'' +
                 '}';
     }
@@ -50,6 +50,8 @@ public class Magazines extends AnalogueItems {
     public String read(){
         return "reading magazine...";
     }
+
+    interface Read{}
 
     public String getTitle() {
         return title;

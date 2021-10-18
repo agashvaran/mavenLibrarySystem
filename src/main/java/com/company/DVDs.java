@@ -1,7 +1,5 @@
 package com.company;
 
-import com.company.DigitalItems;
-
 public class DVDs extends DigitalItems {
     //Attributes
     private String title;
@@ -23,7 +21,7 @@ public class DVDs extends DigitalItems {
 
     @Override
     public String toString() {
-        return "com.company.DVDs{" +
+        return "DVDs{" +
                 "title='" + title + '\'' +
                 '}';
     }

@@ -8,16 +8,9 @@ public abstract class LibraryItems{
 
 
     //Constructors
-
     public LibraryItems(String libraryItemName){
-
         this.libraryItemName = libraryItemName;
     }
-
-//    public com.company.LibraryItems(String libraryItemName, ArrayList<com.company.LibraryItems> allItems){
-//        super(allItems);
-//        this.libraryItemName = libraryItemName;
-//    }
 
     //Methods
     public abstract String use();
