@@ -15,19 +15,19 @@ public class BooksTest {
 
     @Test
     public void testReadBlurbMethod(){
-        com.company.Books testBook = new com.company.Books("catch 22", "mark", "fiction", "Books");
+        com.company.Books testBook = new com.company.Books("catch 22", "mark", "fiction");
         assertEquals("The blurb was not the same","blurb blurb nice blurb",testBook.readBlurb());
     }
 
     @Test
     public void testUseMethod(){
-        com.company.Books testBook = new com.company.Books("catch 22", "mark", "fiction", "Books");
+        com.company.Books testBook = new com.company.Books("catch 22", "mark");
         assertEquals("The book was not the same","override this with read for books",testBook.use());
     }
 
     @Test
     public void testReserveMethod(){
-        com.company.Books testBook = new com.company.Books("catch 22", "mark", "fiction", "Books");
+        com.company.Books testBook = new com.company.Books("catch 22");
         assertEquals("The book was not the same","this book has been reserved",testBook.reserve());
     }
 

@@ -6,10 +6,10 @@ public class AudioBooks extends DigitalItems {
     private String author;
 
     //Constructors
-    public AudioBooks(String title, String author, String libraryItemName){
-        super(libraryItemName);
+    public AudioBooks(String title){
+        super("AudioBook");
         this.title = title;
-        this.author = author;
+        this.author = "Unknown";
     }
 
     public AudioBooks(String title, String author){
@@ -18,11 +18,15 @@ public class AudioBooks extends DigitalItems {
         this.author = author;
     }
 
-    public AudioBooks(String title){
-        super("AudioBook");
+    public AudioBooks(String title, String author, String libraryItemName){
+        super(libraryItemName);
         this.title = title;
-        this.author = "Unknown";
+        this.author = author;
     }
+
+
+
+
 
     //Methods
     @Override

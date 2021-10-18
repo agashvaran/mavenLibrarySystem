@@ -7,10 +7,10 @@ public class Ebooks extends DigitalItems implements Read{
 
 
     //Constructors
-    public Ebooks(String title, String author, String libraryItemName){
-        super(libraryItemName);
+    public Ebooks(String title){
+        super("EBook");
         this.title = title;
-        this.author = author;
+        this.author = "unknown";
     }
 
     public Ebooks(String title, String author){
@@ -19,11 +19,15 @@ public class Ebooks extends DigitalItems implements Read{
         this.author = author;
     }
 
-    public Ebooks(String title){
-        super("EBook");
+    public Ebooks(String title, String author, String libraryItemName){
+        super(libraryItemName);
         this.title = title;
-        this.author = "unknown";
+        this.author = author;
     }
+
+
+
+
 
     //Methods
 

@@ -5,15 +5,17 @@ public class EmptyDesk extends LibraryItems {
     private String deskNumber;
 
     //Constructors
+    public EmptyDesk(String deskNumber){
+        super("com.company.EmptyDesk");
+        this.deskNumber = deskNumber;
+    }
+
     public EmptyDesk(String deskNumber, String libraryItemName){
         super(libraryItemName);
         this.deskNumber = deskNumber;
     }
 
-    public EmptyDesk(String deskNumber){
-        super("com.company.EmptyDesk");
-        this.deskNumber = deskNumber;
-    }
+
 
     //Methods
 

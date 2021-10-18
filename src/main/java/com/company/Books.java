@@ -9,11 +9,17 @@ public class Books extends AnalogueItems {
     private String type;
 
     //Constructors
-    public Books(String title, String author, String type,String libraryItemName){
-        super(libraryItemName);
+
+    public Books(String title){
+        super("Book");
+        this.title = title;
+        this.author = "Unknown";
+    }
+
+    public Books(String title, String author){
+        super("Book");
         this.title = title;
         this.author = author;
-        this.type = type;
     }
 
     public Books(String title, String author, String type){
@@ -24,17 +30,14 @@ public class Books extends AnalogueItems {
 
     }
 
-    public Books(String title, String author){
-        super("Book");
+    public Books(String title, String author, String type,String libraryItemName){
+        super(libraryItemName);
         this.title = title;
         this.author = author;
+        this.type = type;
     }
 
-    public Books(String title){
-        super("Book");
-        this.title = title;
-        this.author = "Unknown";
-    }
+
 
     //Methods
 

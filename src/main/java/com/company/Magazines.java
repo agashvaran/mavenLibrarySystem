@@ -7,15 +7,17 @@ public class Magazines extends AnalogueItems {
     private String title;
 
     //Constructors
+    public Magazines(String title){
+        super("Magazine");
+        this.title = title;
+    }
+
     public Magazines(String title, String libraryItemName){
         super("Magazine");
         this.title = title;
     }
 
-    public Magazines(String title){
-        super("Magazine");
-        this.title = title;
-    }
+
 
     //Methods
 
