@@ -37,6 +37,18 @@ public class AudioBooksTest {
         assertEquals("The book was not the same","Can't hurt me",testABook.getTitle());
     }
 
+    @Test
+    public void testGetAuthorMethod(){
+        AudioBooks testABook = new AudioBooks("Can't hurt me", "me");
+        assertEquals("The book was not the same","me",testABook.getAuthor());
+    }
+
+    @Test
+    public void testGetLibraryItemNameMethod(){
+        AudioBooks testABook = new AudioBooks("Can't hurt me", "me");
+        assertEquals("The book was not the same","Can't hurt me",testABook.getLibraryItemName());
+    }
+
 
 
 

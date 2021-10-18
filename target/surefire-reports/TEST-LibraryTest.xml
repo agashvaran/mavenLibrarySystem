@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="BooksTest" time="0" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="LibraryTest" time="0" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17+35-2724"/>
@@ -61,11 +61,6 @@
     <property name="sun.stdout.encoding" value="cp850"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="BooksTest" name="testReadMethod" time="0"/>
-  <testcase classname="BooksTest" name="testReadBlurbMethod" time="0"/>
-  <testcase classname="BooksTest" name="testBorrowMethod" time="0"/>
-  <testcase classname="BooksTest" name="testFlickThroughMethod" time="0"/>
-  <testcase classname="BooksTest" name="testBookGetTitleMethod" time="0"/>
-  <testcase classname="BooksTest" name="testUseMethod" time="0"/>
-  <testcase classname="BooksTest" name="testReserveMethod" time="0"/>
+  <testcase classname="LibraryTest" name="testGetPostcodeMethod" time="0"/>
+  <testcase classname="LibraryTest" name="testGetItemsMethod" time="0"/>
 </testsuite>
