@@ -8,7 +8,7 @@ public class DVDsTest {
 
     @Test
     public void testUseMethod(){
-        DVDs dvd1 = new DVDs("No Time To Die");
+        DVDs dvd1 = new DVDs("No Time To Die", "DVDs");
         assertEquals("The dvd was not the same","override with play for DVD",dvd1.use());
     }
 

@@ -8,7 +8,7 @@ public class ComputerDeskTest {
 
     @Test
     public void testUseMethod(){
-        ComputerDesk desk1 = new ComputerDesk("23");
+        ComputerDesk desk1 = new ComputerDesk("23", "Computer Desk");
         assertEquals("The desk was not the same","sitting down in front of the computer desk",desk1.use());
     }
 

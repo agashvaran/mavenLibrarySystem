@@ -8,7 +8,7 @@ public class MagazinesTest {
 
     @Test
     public void testUseMethod(){
-        Magazines mag1 = new Magazines("Wired");
+        Magazines mag1 = new Magazines("Wired", "Magazines");
         assertEquals("The desk was not the same","override to read magazine",mag1.use());
     }
 

@@ -16,31 +16,25 @@ public class Books extends AnalogueItems {
         this.type = type;
     }
 
-    public Books(String title, String author, String type){
-        super("Book");
-        this.title = title;
-        this.author = author;
-        this.type = type;
-
-    }
-
-    public Books(String title, String author){
-        super("Book");
-        this.title = title;
-        this.author = author;
-    }
-
-    public Books(String title){
-        super("Book");
-        this.title = title;
-        this.author = "Unknown";
-    }
-
-    public Books(){
-        super("Book");
-        this.title = "Unknown";
-        this.author = "Unknown";
-    }
+//    public Books(String title, String author, String type){
+//        super("Book");
+//        this.title = title;
+//        this.author = author;
+//        this.type = type;
+//
+//    }
+//
+//    public Books(String title, String author){
+//        super("Book");
+//        this.title = title;
+//        this.author = author;
+//    }
+//
+//    public Books(String title){
+//        super("Book");
+//        this.title = title;
+//        this.author = "Unknown";
+//    }
 
     //Methods
 

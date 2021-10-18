@@ -9,7 +9,6 @@ public class AudioBooksTest {
     @Test
     public void testUseMethod(){
         AudioBooks testABook = new AudioBooks("Can't hurt me");
-        com.company.Books testBook = new com.company.Books("override with play for audiobook");
         assertEquals("The book was not the same","override with play for audiobook",testABook.use());
     }
 
@@ -39,7 +38,7 @@ public class AudioBooksTest {
 
     @Test
     public void testGetAuthorMethod(){
-        AudioBooks testABook = new AudioBooks("Can't hurt me", "me");
+        AudioBooks testABook = new AudioBooks("Can't hurt me", "me", "AudioBook");
         assertEquals("The book was not the same","me",testABook.getAuthor());
     }
 
@@ -48,6 +47,7 @@ public class AudioBooksTest {
         AudioBooks testABook = new AudioBooks("Can't hurt me", "me");
         assertEquals("The book was not the same","Can't hurt me",testABook.getLibraryItemName());
     }
+
 
 
 

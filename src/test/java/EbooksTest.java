@@ -9,13 +9,13 @@ public class EbooksTest {
 
     @Test
     public void testUseMethod(){
-        com.company.Ebooks ebook1 = new com.company.Ebooks("god");
+        com.company.Ebooks ebook1 = new com.company.Ebooks("god", "god", "ebook");
         assertEquals("wrong", "override this with read for ebook", ebook1.use());
     }
 
     @Test
     public void testPlayMethod(){
-        com.company.Ebooks ebook1 = new com.company.Ebooks("god");
+        com.company.Ebooks ebook1 = new com.company.Ebooks("god", "god");
         assertEquals("wrong", "Playing digital Item", ebook1.play());
     }
 

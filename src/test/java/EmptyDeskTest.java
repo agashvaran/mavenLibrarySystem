@@ -8,7 +8,7 @@ public class EmptyDeskTest {
 
     @Test
     public void testUseMethod(){
-        EmptyDesk desk2 = new EmptyDesk("49");
+        EmptyDesk desk2 = new EmptyDesk("49", "emptydesk");
         assertEquals("The desk was not the same","setting up my stuff on the emptydesk...",desk2.use());
     }
 
