@@ -49,7 +49,7 @@ public class Ebooks extends DigitalItems implements Read{
     }
 
     public String borrow(){
-        return "ebook sent to email...";
+        return "ebook sent to email";
     }
 
     public String getLibraryItemName() {
