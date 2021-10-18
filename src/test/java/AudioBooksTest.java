@@ -31,6 +31,12 @@ public class AudioBooksTest {
         assertEquals("The book was not the same","audiobook sent to email.",testABook.borrow());
     }
 
+    @Test
+    public void testGetTitleMethod(){
+        AudioBooks testABook = new AudioBooks("Can't hurt me");
+        assertEquals("The book was not the same","Can't hurt me",testABook.getTitle());
+    }
+
 
 
 
