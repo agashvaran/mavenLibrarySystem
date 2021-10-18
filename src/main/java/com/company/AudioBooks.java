@@ -5,7 +5,6 @@ public class AudioBooks extends DigitalItems {
     private String title;
     private String author;
 
-
     //Constructors
     public AudioBooks(String title, String author, String libraryItemName){
         super(libraryItemName);
@@ -25,13 +24,10 @@ public class AudioBooks extends DigitalItems {
         this.author = "Unknown";
     }
 
-
     //Methods
-
-
     @Override
     public String toString() {
-        return "com.company.AudioBooks{" +
+        return "AudioBooks{" +
                 "title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 '}';
@@ -44,10 +40,6 @@ public class AudioBooks extends DigitalItems {
     public String reserve(){
         return "this audiobook has been reserved";
     }
-
-//    public String play(){
-//        return "Playing audiobook";
-//    }
 
     public String borrow(){
         return "audiobook sent to email.";

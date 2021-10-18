@@ -20,7 +20,7 @@ public class Library {
 
     @Override
     public String toString() {
-        return "com.company.Library{" +
+        return "Library{" +
                 "libraryStock=" + libraryStock +
                 ", postCode='" + postCode + '\'' +
                 '}';
