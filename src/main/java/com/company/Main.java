@@ -36,9 +36,6 @@ public class Main {
             System.out.println(items);
         }
 
-
-
-
         System.out.println(audio1.play());
         System.out.println(ebook1.play());
 
