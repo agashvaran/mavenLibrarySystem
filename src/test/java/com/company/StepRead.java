@@ -21,17 +21,13 @@ public class StepRead {
 
     @When("i ask if it is readable")
     public void i_ask_if_it_is_readable() {
-//        actualAnswer = mag1.read().equals("reading magazine") ? "Yes" : "No";
-        actualAnswer = "Yes";
-//        return actualAnswer;
+        actualAnswer = mag1.read().equals("reading magazine") ? "Yes" : "No";
     }
 
     @Then("i should be told that the answer is {string}")
     public void i_should_be_told_that_the_answer_is(String string) {
         assertEquals("not working",string, actualAnswer);
     }
-
-
 
 
 }
