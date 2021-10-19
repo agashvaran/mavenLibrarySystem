@@ -2,6 +2,7 @@
 
 import com.company.AnalogueItems;
 
+
 public class Books extends AnalogueItems {
     //Attributes
     private String title;
@@ -11,31 +12,31 @@ public class Books extends AnalogueItems {
     //Constructors
 
     public Books(String title){
-<span class="fc" id="L14">        super(&quot;Book&quot;);</span>
-<span class="fc" id="L15">        this.title = title;</span>
-<span class="fc" id="L16">        this.author = &quot;Unknown&quot;;</span>
-<span class="fc" id="L17">    }</span>
+<span class="fc" id="L15">        super(&quot;Book&quot;);</span>
+<span class="fc" id="L16">        this.title = title;</span>
+<span class="fc" id="L17">        this.author = &quot;Unknown&quot;;</span>
+<span class="fc" id="L18">    }</span>
 
     public Books(String title, String author){
-<span class="fc" id="L20">        super(&quot;Book&quot;);</span>
-<span class="fc" id="L21">        this.title = title;</span>
-<span class="fc" id="L22">        this.author = author;</span>
-<span class="fc" id="L23">    }</span>
+<span class="fc" id="L21">        super(&quot;Book&quot;);</span>
+<span class="fc" id="L22">        this.title = title;</span>
+<span class="fc" id="L23">        this.author = author;</span>
+<span class="fc" id="L24">    }</span>
 
     public Books(String title, String author, String type){
-<span class="fc" id="L26">        super(&quot;Book&quot;);</span>
-<span class="fc" id="L27">        this.title = title;</span>
-<span class="fc" id="L28">        this.author = author;</span>
-<span class="fc" id="L29">        this.type = type;</span>
+<span class="fc" id="L27">        super(&quot;Book&quot;);</span>
+<span class="fc" id="L28">        this.title = title;</span>
+<span class="fc" id="L29">        this.author = author;</span>
+<span class="fc" id="L30">        this.type = type;</span>
 
-<span class="fc" id="L31">    }</span>
+<span class="fc" id="L32">    }</span>
 
     public Books(String title, String author, String type,String libraryItemName){
-<span class="fc" id="L34">        super(libraryItemName);</span>
-<span class="fc" id="L35">        this.title = title;</span>
-<span class="fc" id="L36">        this.author = author;</span>
-<span class="fc" id="L37">        this.type = type;</span>
-<span class="fc" id="L38">    }</span>
+<span class="fc" id="L35">        super(libraryItemName);</span>
+<span class="fc" id="L36">        this.title = title;</span>
+<span class="fc" id="L37">        this.author = author;</span>
+<span class="fc" id="L38">        this.type = type;</span>
+<span class="fc" id="L39">    }</span>
 
 
 
@@ -43,7 +44,7 @@ public class Books extends AnalogueItems {
 
     @Override
     public String toString() {
-<span class="nc" id="L46">        return &quot;Book{&quot; +</span>
+<span class="nc" id="L47">        return &quot;Book{&quot; +</span>
                 &quot;title='&quot; + title + '\'' +
                 &quot;, author='&quot; + author + '\'' +
                 &quot;, type='&quot; + type + '\'' +
@@ -51,57 +52,58 @@ public class Books extends AnalogueItems {
     }
 
     public String readBlurb(){
-<span class="fc" id="L54">        return &quot;blurb blurb nice blurb&quot;;</span>
+<span class="fc" id="L55">        return &quot;blurb blurb nice blurb&quot;;</span>
     }
 
     public String use(){
-<span class="fc" id="L58">        return &quot;override this with read for books&quot;;</span>
+<span class="fc" id="L59">        return &quot;override this with read for books&quot;;</span>
     }
 
     public String reserve(){
-<span class="fc" id="L62">        return &quot;this book has been reserved&quot;;</span>
+<span class="fc" id="L63">        return &quot;this book has been reserved&quot;;</span>
     }
 
     public String flickThrough(){
-<span class="fc" id="L66">        return &quot;flicking through book...done.&quot;;</span>
+<span class="fc" id="L67">        return &quot;flicking through book...done.&quot;;</span>
     }
 
     public String borrow(){
-<span class="fc" id="L70">        return &quot;book is loaned to you for a week&quot;;</span>
+<span class="fc" id="L71">        return &quot;book is loaned to you for a week&quot;;</span>
     }
 
 
     public String read(){
         
-<span class="fc" id="L76">        return &quot;reading book...start.&quot;;</span>
+<span class="fc" id="L77">        return &quot;reading book...start.&quot;;</span>
     }
 
     public String getLibraryItemName() {
-<span class="fc" id="L80">        return &quot;Book: &quot; + title;</span>
+<span class="fc" id="L81">        return &quot;Book: &quot; + title;</span>
     }
 
+
     public String getTitle() {
-<span class="fc" id="L84">        return title;</span>
+<span class="fc" id="L86">        return title;</span>
     }
 
     public void setTitle(String title) {
-<span class="nc" id="L88">        this.title = title;</span>
-<span class="nc" id="L89">    }</span>
+<span class="nc" id="L90">        this.title = title;</span>
+<span class="nc" id="L91">    }</span>
 
     public String getAuthor() {
-<span class="fc" id="L92">        return author;</span>
+<span class="fc" id="L94">        return author;</span>
     }
 
     public void setAuthor(String author) {
-<span class="nc" id="L96">        this.author = author;</span>
-<span class="nc" id="L97">    }</span>
+<span class="nc" id="L98">        this.author = author;</span>
+<span class="nc" id="L99">    }</span>
 
     public String getType() {
-<span class="fc" id="L100">        return type;</span>
+<span class="fc" id="L102">        return type;</span>
     }
 
     public void setType(String type) {
-<span class="nc" id="L104">        this.type = type;</span>
-<span class="nc" id="L105">    }</span>
+<span class="nc" id="L106">        this.type = type;</span>
+<span class="nc" id="L107">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

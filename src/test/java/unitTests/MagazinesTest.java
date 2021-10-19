@@ -1,3 +1,5 @@
+package unitTests;
+
 import com.company.EmptyDesk;
 import com.company.Magazines;
 import org.junit.Test;
@@ -33,7 +35,7 @@ public class MagazinesTest {
     @Test
     public void testReadMethod(){
         Magazines mag1 = new Magazines("Wired");
-        assertEquals("The desk was not the same","reading magazine...",mag1.read());
+        assertEquals("The desk was not the same","reading magazine",mag1.read());
     }
 
     @Test

@@ -1,3 +1,5 @@
+package unitTests;
+
 import com.company.ComputerDesk;
 import com.company.DVDs;
 import org.junit.Test;

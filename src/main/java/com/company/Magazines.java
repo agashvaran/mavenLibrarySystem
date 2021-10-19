@@ -50,7 +50,7 @@ public class Magazines extends AnalogueItems {
     }
 
     public String read(){
-        return "reading magazine...";
+        return "reading magazine";
     }
 
     interface Read{}

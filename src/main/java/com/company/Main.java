@@ -10,8 +10,13 @@ public class Main {
     public static void main(String[] args) {
 
 
+
 //        Books book1 = new Books("Wolves Of The Plains", "Conn Iggulden", "Fiction");
-//        Magazines mag1 = new Magazines("Wired October 2021");
+        Magazines mag1 = new Magazines("Wired October 2021");
+
+        System.out.println(mag1.read().equals("reading magazine"));
+
+
 //
 //        AudioBooks audio1 = new AudioBooks("Can't hurt me", "David Goggins");
 //        Ebooks ebook1 = new Ebooks("The 80/20 principle", "R Koch");

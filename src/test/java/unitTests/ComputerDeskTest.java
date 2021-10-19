@@ -1,3 +1,4 @@
+package unitTests;
 
 import com.company.ComputerDesk;
 import org.junit.Test;
