@@ -5,33 +5,33 @@ public class AudioBooks extends DigitalItems {
     private String title;
     private String author;
 
-
     //Constructors
-    public AudioBooks(String title, String author, String libraryItemName){
-<span class="nc" id="L11">        super(libraryItemName);</span>
-<span class="nc" id="L12">        this.title = title;</span>
-<span class="nc" id="L13">        this.author = author;</span>
-<span class="nc" id="L14">    }</span>
+    public AudioBooks(String title){
+<span class="fc" id="L10">        super(&quot;AudioBook&quot;);</span>
+<span class="fc" id="L11">        this.title = title;</span>
+<span class="fc" id="L12">        this.author = &quot;Unknown&quot;;</span>
+<span class="fc" id="L13">    }</span>
 
     public AudioBooks(String title, String author){
-<span class="fc" id="L17">        super(&quot;AudioBook&quot;);</span>
-<span class="fc" id="L18">        this.title = title;</span>
-<span class="fc" id="L19">        this.author = author;</span>
-<span class="fc" id="L20">    }</span>
+<span class="fc" id="L16">        super(&quot;AudioBook&quot;);</span>
+<span class="fc" id="L17">        this.title = title;</span>
+<span class="fc" id="L18">        this.author = author;</span>
+<span class="fc" id="L19">    }</span>
 
-    public AudioBooks(String title){
-<span class="fc" id="L23">        super(&quot;AudioBook&quot;);</span>
-<span class="fc" id="L24">        this.title = title;</span>
-<span class="fc" id="L25">        this.author = &quot;Unknown&quot;;</span>
-<span class="fc" id="L26">    }</span>
+    public AudioBooks(String title, String author, String libraryItemName){
+<span class="fc" id="L22">        super(libraryItemName);</span>
+<span class="fc" id="L23">        this.title = title;</span>
+<span class="fc" id="L24">        this.author = author;</span>
+<span class="fc" id="L25">    }</span>
+
+
+
 
 
     //Methods
-
-
     @Override
     public String toString() {
-<span class="nc" id="L34">        return &quot;com.company.AudioBooks{&quot; +</span>
+<span class="nc" id="L34">        return &quot;AudioBooks{&quot; +</span>
                 &quot;title='&quot; + title + '\'' +
                 &quot;, author='&quot; + author + '\'' +
                 '}';
@@ -45,32 +45,28 @@ public class AudioBooks extends DigitalItems {
 <span class="fc" id="L45">        return &quot;this audiobook has been reserved&quot;;</span>
     }
 
-//    public String play(){
-//        return &quot;Playing audiobook&quot;;
-//    }
-
     public String borrow(){
-<span class="fc" id="L53">        return &quot;audiobook sent to email.&quot;;</span>
+<span class="fc" id="L49">        return &quot;audiobook sent to email.&quot;;</span>
     }
 
     public String getTitle() {
-<span class="fc" id="L57">        return title;</span>
+<span class="fc" id="L53">        return title;</span>
     }
 
     public void setTitle(String title) {
-<span class="nc" id="L61">        this.title = title;</span>
-<span class="nc" id="L62">    }</span>
+<span class="nc" id="L57">        this.title = title;</span>
+<span class="nc" id="L58">    }</span>
 
     public String getAuthor() {
-<span class="fc" id="L65">        return author;</span>
+<span class="fc" id="L61">        return author;</span>
     }
 
     public void setAuthor(String author) {
-<span class="nc" id="L69">        this.author = author;</span>
-<span class="nc" id="L70">    }</span>
+<span class="nc" id="L65">        this.author = author;</span>
+<span class="nc" id="L66">    }</span>
 
     public String getLibraryItemName() {
-<span class="fc" id="L73">        return title;</span>
+<span class="fc" id="L69">        return title;</span>
     }
 
 

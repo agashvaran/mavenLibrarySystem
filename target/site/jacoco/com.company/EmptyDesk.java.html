@@ -5,40 +5,42 @@ public class EmptyDesk extends LibraryItems {
     private String deskNumber;
 
     //Constructors
-    public EmptyDesk(String deskNumber, String libraryItemName){
-<span class="nc" id="L9">        super(libraryItemName);</span>
-<span class="nc" id="L10">        this.deskNumber = deskNumber;</span>
-<span class="nc" id="L11">    }</span>
-
     public EmptyDesk(String deskNumber){
-<span class="fc" id="L14">        super(&quot;com.company.EmptyDesk&quot;);</span>
+<span class="fc" id="L9">        super(&quot;com.company.EmptyDesk&quot;);</span>
+<span class="fc" id="L10">        this.deskNumber = deskNumber;</span>
+<span class="fc" id="L11">    }</span>
+
+    public EmptyDesk(String deskNumber, String libraryItemName){
+<span class="fc" id="L14">        super(libraryItemName);</span>
 <span class="fc" id="L15">        this.deskNumber = deskNumber;</span>
 <span class="fc" id="L16">    }</span>
+
+
 
     //Methods
 
 
     @Override
     public String toString() {
-<span class="nc" id="L23">        return &quot;com.company.EmptyDesk{&quot; +</span>
+<span class="nc" id="L25">        return &quot;EmptyDesk{&quot; +</span>
                 &quot;deskNumber='&quot; + deskNumber + '\'' +
                 '}';
     }
 
     public String use(){
-<span class="fc" id="L29">        return &quot;setting up my stuff on the emptydesk...&quot;;</span>
+<span class="fc" id="L31">        return &quot;setting up my stuff on the emptydesk...&quot;;</span>
     }
 
     public String reserve(){
-<span class="fc" id="L33">        return &quot;emptydesk reserved&quot;;</span>
+<span class="fc" id="L35">        return &quot;emptydesk reserved&quot;;</span>
     }
 
     public String usePersonalDevice(){
-<span class="fc" id="L37">        return &quot;using my personal laptop...&quot;;</span>
+<span class="fc" id="L39">        return &quot;using my personal laptop...&quot;;</span>
     }
 
     public String getLibraryItemName() {
-<span class="nc" id="L41">        return &quot;Desk &quot; + deskNumber;</span>
+<span class="fc" id="L43">        return &quot;Desk &quot; + deskNumber;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

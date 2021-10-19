@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="ComputerDeskTest" time="0" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="ComputerDeskTest" time="0" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17+35-2724"/>
@@ -61,6 +61,7 @@
     <property name="sun.stdout.encoding" value="cp850"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
+  <testcase classname="ComputerDeskTest" name="testgetLibraryItemNameMethod" time="0"/>
   <testcase classname="ComputerDeskTest" name="testUseMethod" time="0"/>
   <testcase classname="ComputerDeskTest" name="testLogOutMethod" time="0"/>
   <testcase classname="ComputerDeskTest" name="testLoginMethod" time="0"/>

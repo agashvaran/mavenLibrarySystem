@@ -9,44 +9,41 @@ public class Books extends AnalogueItems {
     private String type;
 
     //Constructors
-    public Books(String title, String author, String type,String libraryItemName){
-<span class="nc" id="L13">        super(libraryItemName);</span>
-<span class="nc" id="L14">        this.title = title;</span>
-<span class="nc" id="L15">        this.author = author;</span>
-<span class="nc" id="L16">        this.type = type;</span>
-<span class="nc" id="L17">    }</span>
-
-    public Books(String title, String author, String type){
-<span class="nc" id="L20">        super(&quot;Book&quot;);</span>
-<span class="nc" id="L21">        this.title = title;</span>
-<span class="nc" id="L22">        this.author = author;</span>
-<span class="nc" id="L23">        this.type = type;</span>
-
-<span class="nc" id="L25">    }</span>
-
-    public Books(String title, String author){
-<span class="nc" id="L28">        super(&quot;Book&quot;);</span>
-<span class="nc" id="L29">        this.title = title;</span>
-<span class="nc" id="L30">        this.author = author;</span>
-<span class="nc" id="L31">    }</span>
 
     public Books(String title){
-<span class="fc" id="L34">        super(&quot;Book&quot;);</span>
-<span class="fc" id="L35">        this.title = title;</span>
-<span class="fc" id="L36">        this.author = &quot;Unknown&quot;;</span>
-<span class="fc" id="L37">    }</span>
+<span class="fc" id="L14">        super(&quot;Book&quot;);</span>
+<span class="fc" id="L15">        this.title = title;</span>
+<span class="fc" id="L16">        this.author = &quot;Unknown&quot;;</span>
+<span class="fc" id="L17">    }</span>
 
-    public Books(){
-<span class="nc" id="L40">        super(&quot;Book&quot;);</span>
-<span class="nc" id="L41">        this.title = &quot;Unknown&quot;;</span>
-<span class="nc" id="L42">        this.author = &quot;Unknown&quot;;</span>
-<span class="nc" id="L43">    }</span>
+    public Books(String title, String author){
+<span class="fc" id="L20">        super(&quot;Book&quot;);</span>
+<span class="fc" id="L21">        this.title = title;</span>
+<span class="fc" id="L22">        this.author = author;</span>
+<span class="fc" id="L23">    }</span>
+
+    public Books(String title, String author, String type){
+<span class="fc" id="L26">        super(&quot;Book&quot;);</span>
+<span class="fc" id="L27">        this.title = title;</span>
+<span class="fc" id="L28">        this.author = author;</span>
+<span class="fc" id="L29">        this.type = type;</span>
+
+<span class="fc" id="L31">    }</span>
+
+    public Books(String title, String author, String type,String libraryItemName){
+<span class="fc" id="L34">        super(libraryItemName);</span>
+<span class="fc" id="L35">        this.title = title;</span>
+<span class="fc" id="L36">        this.author = author;</span>
+<span class="fc" id="L37">        this.type = type;</span>
+<span class="fc" id="L38">    }</span>
+
+
 
     //Methods
 
     @Override
     public String toString() {
-<span class="nc" id="L49">        return &quot;Book{&quot; +</span>
+<span class="nc" id="L46">        return &quot;Book{&quot; +</span>
                 &quot;title='&quot; + title + '\'' +
                 &quot;, author='&quot; + author + '\'' +
                 &quot;, type='&quot; + type + '\'' +
@@ -54,56 +51,57 @@ public class Books extends AnalogueItems {
     }
 
     public String readBlurb(){
-<span class="fc" id="L57">        return &quot;blurb blurb nice blurb&quot;;</span>
+<span class="fc" id="L54">        return &quot;blurb blurb nice blurb&quot;;</span>
     }
 
     public String use(){
-<span class="fc" id="L61">        return &quot;override this with read for books&quot;;</span>
+<span class="fc" id="L58">        return &quot;override this with read for books&quot;;</span>
     }
 
     public String reserve(){
-<span class="fc" id="L65">        return &quot;this book has been reserved&quot;;</span>
+<span class="fc" id="L62">        return &quot;this book has been reserved&quot;;</span>
     }
 
     public String flickThrough(){
-<span class="fc" id="L69">        return &quot;flicking through book...done.&quot;;</span>
+<span class="fc" id="L66">        return &quot;flicking through book...done.&quot;;</span>
     }
 
     public String borrow(){
-<span class="fc" id="L73">        return &quot;book is loaned to you for a week&quot;;</span>
+<span class="fc" id="L70">        return &quot;book is loaned to you for a week&quot;;</span>
     }
 
 
     public String read(){
-<span class="fc" id="L78">        return &quot;reading book...start.&quot;;</span>
+        
+<span class="fc" id="L76">        return &quot;reading book...start.&quot;;</span>
     }
 
     public String getLibraryItemName() {
-<span class="nc" id="L82">        return &quot;Book: &quot; + title;</span>
+<span class="fc" id="L80">        return &quot;Book: &quot; + title;</span>
     }
 
     public String getTitle() {
-<span class="fc" id="L86">        return title;</span>
+<span class="fc" id="L84">        return title;</span>
     }
 
     public void setTitle(String title) {
-<span class="nc" id="L90">        this.title = title;</span>
-<span class="nc" id="L91">    }</span>
+<span class="nc" id="L88">        this.title = title;</span>
+<span class="nc" id="L89">    }</span>
 
     public String getAuthor() {
-<span class="nc" id="L94">        return author;</span>
+<span class="fc" id="L92">        return author;</span>
     }
 
     public void setAuthor(String author) {
-<span class="nc" id="L98">        this.author = author;</span>
-<span class="nc" id="L99">    }</span>
+<span class="nc" id="L96">        this.author = author;</span>
+<span class="nc" id="L97">    }</span>
 
     public String getType() {
-<span class="nc" id="L102">        return type;</span>
+<span class="fc" id="L100">        return type;</span>
     }
 
     public void setType(String type) {
-<span class="nc" id="L106">        this.type = type;</span>
-<span class="nc" id="L107">    }</span>
+<span class="nc" id="L104">        this.type = type;</span>
+<span class="nc" id="L105">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

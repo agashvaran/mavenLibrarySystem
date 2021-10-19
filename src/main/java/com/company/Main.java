@@ -9,6 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+
 //        Books book1 = new Books("Wolves Of The Plains", "Conn Iggulden", "Fiction");
 //        Magazines mag1 = new Magazines("Wired October 2021");
 //

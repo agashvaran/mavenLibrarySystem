@@ -1,69 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ebooks.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">mavenLibrarySystem</a> &gt; <a href="index.source.html" class="el_package">com.company</a> &gt; <span class="el_source">Ebooks.java</span></div><h1>Ebooks.java</h1><pre class="source lang-java linenums">package com.company;
 
-import com.company.DigitalItems;
-
-public class Ebooks extends DigitalItems implements Read {
+public class Ebooks extends DigitalItems implements Read{
     //Attributes
     private String title;
     private String author;
 
 
     //Constructors
-    public Ebooks(String title, String author, String libraryItemName){
-<span class="nc" id="L13">        super(libraryItemName);</span>
-<span class="nc" id="L14">        this.title = title;</span>
-<span class="nc" id="L15">        this.author = author;</span>
-<span class="nc" id="L16">    }</span>
+    public Ebooks(String title){
+<span class="fc" id="L11">        super(&quot;EBook&quot;);</span>
+<span class="fc" id="L12">        this.title = title;</span>
+<span class="fc" id="L13">        this.author = &quot;unknown&quot;;</span>
+<span class="fc" id="L14">    }</span>
 
     public Ebooks(String title, String author){
-<span class="nc" id="L19">        super(&quot;EBook&quot;);</span>
-<span class="nc" id="L20">        this.title = title;</span>
-<span class="nc" id="L21">        this.author = author;</span>
-<span class="nc" id="L22">    }</span>
+<span class="fc" id="L17">        super(&quot;EBook&quot;);</span>
+<span class="fc" id="L18">        this.title = title;</span>
+<span class="fc" id="L19">        this.author = author;</span>
+<span class="fc" id="L20">    }</span>
 
-    public Ebooks(String title){
-<span class="fc" id="L25">        super(&quot;EBook&quot;);</span>
-<span class="fc" id="L26">        this.title = title;</span>
-<span class="fc" id="L27">        this.author = &quot;unknown&quot;;</span>
-<span class="fc" id="L28">    }</span>
+    public Ebooks(String title, String author, String libraryItemName){
+<span class="fc" id="L23">        super(libraryItemName);</span>
+<span class="fc" id="L24">        this.title = title;</span>
+<span class="fc" id="L25">        this.author = author;</span>
+<span class="fc" id="L26">    }</span>
+
+
+
+
 
     //Methods
 
 
     @Override
     public String toString() {
-<span class="nc" id="L35">        return &quot;com.company.Ebooks{&quot; +</span>
+<span class="nc" id="L37">        return &quot;Ebooks{&quot; +</span>
                 &quot;title='&quot; + title + '\'' +
                 &quot;, author='&quot; + author + '\'' +
                 '}';
     }
 
     public String use(){
-<span class="fc" id="L42">        return &quot;override this with read for ebook&quot;;</span>
+<span class="fc" id="L44">        return &quot;override this with read for ebook&quot;;</span>
     }
 
     public String reserve(){
-<span class="fc" id="L46">        return &quot;this ebook has been reserved&quot;;</span>
+<span class="fc" id="L48">        return &quot;this ebook has been reserved&quot;;</span>
     }
 
-    //this is bad coding. make it an interface.
-//    @Override
-//    public void play(){
-//        read();
-//    }
-
     public String read(){
-<span class="fc" id="L56">        return &quot;preparing book for reading...&quot;;</span>
+<span class="fc" id="L52">        return &quot;preparing book for reading...&quot;;</span>
     }
 
     public String borrow(){
-<span class="fc" id="L60">        return &quot;ebook sent to email&quot;;</span>
+<span class="fc" id="L56">        return &quot;ebook sent to email&quot;;</span>
     }
-
-
 
     public String getLibraryItemName() {
-<span class="nc" id="L66">        return title;</span>
+<span class="fc" id="L60">        return title;</span>
     }
+
+    public String getTitle() {
+<span class="nc" id="L64">        return title;</span>
+    }
+
+    public void setTitle(String title) {
+<span class="nc" id="L68">        this.title = title;</span>
+<span class="nc" id="L69">    }</span>
+
+    public String getAuthor() {
+<span class="nc" id="L72">        return author;</span>
+    }
+
+    public void setAuthor(String author) {
+<span class="nc" id="L76">        this.author = author;</span>
+<span class="nc" id="L77">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
